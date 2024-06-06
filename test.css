@@ -1,0 +1,48 @@
+/* Universal Selector */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Element Selector */
+p{
+    text-align: center;
+}
+/* ID Selector */
+#myParagraph{
+    color: rgb(24, 228, 126);
+}
+/* Class Selector */
+.center-paragraph{
+    font-weight: bold;
+}
+/* Grouping Selector */
+p, q{
+    font-weight: bold;
+}
+/* Combinator Selector - Descendent Selector */
+div p{
+    background-color: yellow;
+}
+/* Combinator Selector - Child Selector */
+div > p{
+    background-color: cyan;
+}
+/* Combinator Selector - Adjacent Sibling Selector */
+div + p{
+    background-color: yellowgreen;
+}
+/* Combinator Selector - General Sibling Selector */
+div ~ h5{
+    background-color: goldenrod;
+}
+/* Pseduo-class Selector */
+div ~ p:hover{
+    background-color: darkslateblue;
+}
+/* Pseduo-element Selector */
+div ~ p::first-letter{
+    color: red;
+}
+/* Attribute Selector */
+a[target]{
+    background-color: cyan;
+}
